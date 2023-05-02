@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h1,h2{
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+ul, li,a{
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+header{
+    text-align: center;
+    margin: 2em 0px;
+    font-size: 0.8em;
+}
+
+main{
+  background-color: #454545;
+  height: 100vh;
+}
+
+.container,.container-pu_form,.pop-up, .container-buttons_pum,.main, .container-ul_sb li, .inicio_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container, .container-navegation{
+      max-width: 1400px;
+      margin: auto;
+}
+
+.container{
+  background: #454545;
+}
+
+.container-title{
+  color: whitesmoke;
+}
+
+
+.container-form_main h3, .container-pu_form h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+form{
+    width: 400px;
+    background: #606060;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: whitesmoke;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: whitesmoke;
+  }
+
+ .container-form_main p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .container-form_main a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .container-form_main a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+  
+  .botons{
+    width: 100%;
+    border: none;
+    padding: 0.5em 1em;
+    color: whitesmoke;
+    margin: 1em 0;
+    font-size: 1em;
+    text-align: center;
+    background: none;
+    outline: 1px solid #edf2f4;
+  
+  }
+
+
+
+/* estilos de navegation*/
+
+.main{
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+
+.container-sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #606060;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+}
+
+.container-header_sb{
+  padding: 0.5em 1em;
+} 
+
+.container-logo_sb{
+  width: 15vw;
+  margin: auto;
+}
+
+.container-ul_sb{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.icon_sb{
+  width: 24px;
+  margin-right: 16px;
+}
+.container-ul_sb li{
+  border-bottom: 0.5px solid #D5D3DA;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.5em 1em;
+  transition: 0.4s all;
+}
+
+.container-ul_sb li:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.container-txt_sb, .container-txt_main,.txt_sb, .datos p{
+  font-size: 15px;
+  color:whitesmoke;
+}
+
+.botons:hover{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.navegation{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: #454545;
+  overflow-y: scroll;
+}
+
+.inicio_main{
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container-logo_main{
+  width: 15em;
+}
+
+.container-datos{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: row wrap;
+  gap: 25px;
+}
+
+.container-txt_main{
+  text-align: center;
+}
+
+.datos {
+  color: whitesmoke;
+  width: 10em;
+}
+
+.datos h3{
+  font-size: 1em;
+  margin: 15px 0px;
+  border-bottom: 0.5px solid #D5D3DA;
+  text-align: center;
+}
+
+.datos a{
+  font-size: 0.9em;
+  text-align: center;
+}
+
+
+@media (min-width:700px){
+
+  .main{
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+
+  .container-sidebar{
+    width: 20vw;
+  }
+
+  .container-logo_sb{
+    width: 10vw;
+  }
+
+  .container-logo_main{
+    width: 30vw;
+    border-radius: 0%;
+  }
+  
+  .datos {
+    width: 15em;
+    color: whitesmoke;
+  }
+  
+  .datos h3{
+    font-size: 1.3em;
+  }
+
+}
