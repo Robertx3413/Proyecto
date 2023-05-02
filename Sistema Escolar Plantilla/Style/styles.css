@@ -177,6 +177,8 @@ form{
 .botons:hover{
   background-color:rgba(0, 0, 0, 0.5);
 }
+  
+
 
 .navegation{
   display: flex;
