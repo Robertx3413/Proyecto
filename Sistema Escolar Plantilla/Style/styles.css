@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
 
 h1,h2{
@@ -33,7 +34,7 @@ header{
 }
 
 main{
-  background-color: #454545;
+  background-color: #000b1f;
   height: 100vh;
 }
 
@@ -50,7 +51,7 @@ main{
 }
 
 .container{
-  background: #454545;
+  background: #000b1f;
 }
 
 .container-title{
@@ -66,25 +67,23 @@ main{
 
 form{
     width: 400px;
-    background: #606060;
     padding: 30px;
     margin: auto;
     border-radius: 4px;
-    font-family: 'calibri';
     color: whitesmoke;
+    outline: 1px solid whitesmoke;
     box-shadow: 7px 13px 37px #000;
 }
 
 .controls {
     width: 100%;
-    background: #24303c;
+    background: whitesmoke;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
-    font-family: 'calibri';
     font-size: 18px;
-    color: whitesmoke;
+    color: #000b1f;
   }
 
  .container-form_main p {
@@ -97,6 +96,7 @@ form{
   .container-form_main a {
     color: whitesmoke;
     text-decoration: none;
+    font-size: 15px;
   }
   
   .container-form_main a:hover {
@@ -110,7 +110,7 @@ form{
     padding: 0.5em 1em;
     color: whitesmoke;
     margin: 1em 0;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
     background: none;
     outline: 1px solid #edf2f4;
@@ -133,7 +133,8 @@ form{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #606060;
+  background-color:  #000b1f;
+  outline: 1px solid whitesmoke;
   padding: 0.5em 1em;
   font-size: 0.8em;
 }
@@ -156,8 +157,9 @@ form{
   width: 24px;
   margin-right: 16px;
 }
+
 .container-ul_sb li{
-  border-bottom: 0.5px solid #D5D3DA;
+  border-bottom: 0.5px solid whitesmoke;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0.5em 1em;
@@ -177,8 +179,6 @@ form{
 .botons:hover{
   background-color:rgba(0, 0, 0, 0.5);
 }
-  
-
 
 .navegation{
   display: flex;
@@ -231,6 +231,8 @@ form{
 
 @media (min-width:700px){
 
+
+  /* Navaegacion de sistena */
   .main{
     flex-direction: row;
     align-items: stretch;
